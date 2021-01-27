@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="/stylesheets/prodect.css">
+
+<div class="py-4">
+    <div class="container-fluid">
+        <div class="text-center">
+            <h2>{{data.nameProdect}}</h2>
+            <p class="text-break">{{data.titleProdect}}</p>
+        </div>
+      
+              <img src="" alt="" srcset="" class="picture" id="img">
+   
+        <div class="row">
+            <div class="col">
+                <ul class="list-group">
+                    {{#each data}}
+                    {{#each this.imgProdect}}
+                    <li class="list-group">
+                        
+                            <img src="/{{filename}}">
+                       
+                    </li>
+                    {{/each}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+   <form action="" method="post"> 
+  
+        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+   
+    
+    <button type="submit">buy</button>
+    <select name="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    </form>
+  
+
+
+</div>
+
+
+
+
+<script>
+    var img = document.querySelectorAll('img');
+    var select = document.getElementById('img');
+    var video = document.getElementById('src2');
+    var src = document.getElementById('src');
+
+    //img
+    for (i = 0; i < img.length; i++) {
+        select.src = img[2].src;
+        $("#img").elevateZoom();
+        img[2].addEventListener('mouseenter', function () {
+            $("#img").elevateZoom();
+            select.src = img[2].src;
+        })
+        img[3].addEventListener('mouseenter', function () {
+            $("#img").elevateZoom();
+            select.src = img[3].src;
+        })
+        img[4].addEventListener('mouseenter', function () {
+            $("#img").elevateZoom();
+            select.src = img[4].src;
+        })
+        img[5].addEventListener('mouseenter', function () {
+            $("#img").elevateZoom();
+            select.src = img[5].src;
+        })
+    }
+
+</script>

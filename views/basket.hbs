@@ -1,0 +1,22 @@
+<style>
+    ul li img {
+        width: 100px;
+    }
+</style>
+<div class="py-4">
+    <div class="container-fluid">
+        <div class="row">
+            <ul class="list-group">
+                {{#each data }}
+
+
+                <li class="list-group-item"><img src="{{imgInterface}}">
+                    <h5 class="card-title">{{this.nameProdect}}</h5>
+                    <p class="card-text">{{this.price}}</p>
+                </li>
+
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/stylesheets/login.css">
+<div class="container">
+    <div class="row justify-content-center">
+
+        <div class="col-md-8">
+            {{#if if}}
+            <div class="alert alert-danger" role="alert">
+                {{#each errors}}
+                <ul>
+                    <li> {{this.param}} <span>{{this.msg}}</span></li>
+                </ul>
+
+                {{/each}}
+            </div>
+            {{/if}}
+            <div class="card">
+                <div class="card-header">
+                    register
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="text" name="name" class="form-control" placeholder="name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="text" name="user" class="form-control" placeholder="user">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="email" name="email" class="form-control" placeholder="email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="password" name="password" class="form-control" placeholder="password">
+                            </div>
+                        </div>
+                        <div class="form-group row  mb-0">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn">register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

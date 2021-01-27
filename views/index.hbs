@@ -1,0 +1,28 @@
+<div class="py-4">
+    <div class="container-fluid">
+        <div class="row">
+           
+            {{#each data }}
+           
+            <div class="card" style="width: 18rem;">
+                
+                    <img class="card-img-top" src="{{imgInterface}}">
+              
+               
+                
+                <div class="card-body">
+                    <h5 class="card-title">{{this.nameProdect}}</h5>
+                    <p class="card-text">{{this.titleProdect}}</p>
+                    <p class="card-text">{{this.priceProdect}}</p>
+                    <a href="/prodect/{{this._id}}" class="btn btn-success">buy</a>
+                    <a href="/delete/{{this._id}}" class="btn btn-danger">delete</a>
+                </div>
+            </div>
+            {{/each}}
+            
+        </div>
+    </div>
+</div> 
+
+
+              

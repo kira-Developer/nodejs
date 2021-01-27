@@ -1,0 +1,18 @@
+
+#img {
+  width: 300px;
+  position: absolute;
+  left: 14pc;
+}
+
+
+.list-group li img {
+  width: 65px;
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+}
+.list-group li img:hover {
+  width: 65px;
+  border: 1px solid orange;
+}

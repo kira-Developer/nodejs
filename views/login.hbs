@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/stylesheets/login.css">
+<div class="py-4">
+    <div class="container">
+        {{#if if}}
+              <div class="alert alert-danger" role="alert">
+            {{#each errors}}
+
+            {{this.param}} <span>{{this.msg}}</span>
+            {{/each}}
+        </div>
+        {{/if}}
+      
+
+        <div class="row  justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">login</div>
+                    <div class="card-body text-center">
+                        <form method="POST">
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" name="password" id="password"
+                                        placeholder="password">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn">login</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

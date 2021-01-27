@@ -1,0 +1,154 @@
+.card-box {
+    position: absolute;
+
+width: 28pc;
+    padding: 141px;
+    border-radius: 10px;
+    background: url('https://media.istockphoto.com/photos/vintage-retro-grungy-background-design-and-pattern-texture-picture-id656453072?k=6&m=656453072&s=612x612&w=0&h=4TW6UwMWJrHwF4SiNBwCZfZNJ1jVvkwgz3agbGBihyE=') no-repeat;
+    transform-style: preserve-3d;
+    transition: all 1.4s ease;
+
+
+}
+
+
+
+.card-visa-img span img {
+    width: 100px;
+    position: relative;
+    left: 193px;
+    top: 12pc;
+}
+
+
+
+.card-number {
+    letter-spacing: 4px;
+    position: relative;
+    left: 20px;
+    margin: -94px;
+    font-size: 30px;
+    top: 77px;
+}
+
+.card-name {
+    position: relative;
+    top: 421px;
+    margin: -64px;
+    font-size: 22px;
+    text-transform: uppercase;
+    left: -30px;
+}
+
+
+
+.card-name span {
+    font-size: 15px;
+    position: relative;
+}
+
+.card-name p {
+    position: relative;
+    top: -20px;
+    left: -15px;
+}
+
+
+
+
+.card-sms img {
+    width: 74px;
+    position: relative;
+    left: -93px;
+    top: 30px;
+    margin: -11px;
+}
+
+
+.card-Expiry-date {
+    position: relative;
+    top: 294px;
+    margin: -186px;
+    font-size: 22px;
+    text-transform: uppercase;
+    left: 390px;
+
+
+}
+
+.card-Expiry-date .exp {
+
+    left: -7px;
+    position: relative;
+    font-size: 15px;
+    top: 16px;
+
+}
+
+.card-box-back {
+  
+    padding: 141px;
+    border-radius: 10px;
+    background: url('https://media.istockphoto.com/photos/vintage-retro-grungy-background-design-and-pattern-texture-picture-id656453072?k=6&m=656453072&s=612x612&w=0&h=4TW6UwMWJrHwF4SiNBwCZfZNJ1jVvkwgz3agbGBihyE=');
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    margin-top: 9pc;
+    width: 28pc;
+
+}
+
+.div {
+    height: 35px;
+    background-color: #303030;
+    width: 447px;
+    position: relative;
+    left: -92px;
+    top: -78px;
+    margin: -48px;
+}
+
+.card__secret--last {
+    color: #303030;
+    text-align: right;
+    margin: 0;
+    font-size: 14px;
+}
+
+.card__secret {
+    padding: 5px 12px;
+    background-color: #fff;
+    position: relative;
+    width: 314px;
+    left: -44px;
+}
+
+.card__secret:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    height: calc(100% + 6px);
+    width: calc(100% - 42px);
+    border-radius: 4px;
+    background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
+}
+
+.card-box-back img {
+    width: 55px;
+    position: relative;
+    left: -102px;
+    top: -21px;
+    margin: -15px;
+}
+
+.card-box-back-visa-img img {
+    width: 100px;
+    position: relative;
+    top: 110px;
+    left: 210px;
+}
+p{
+    margin-top: 1pc;
+}
